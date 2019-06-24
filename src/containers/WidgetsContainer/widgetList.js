@@ -8,9 +8,11 @@ import { WIDGET_TYPES, VISUALISATION_TYPES } from '../../components/Widget/const
 
 export default [
   {
+    id: 'ID_0',
     type: WIDGET_TYPES.UI
   },
   {
+    id: 'ID_1',
     type: WIDGET_TYPES.VISUALISATION,
     data: {
       url: ''
@@ -20,6 +22,7 @@ export default [
     },
   },
   {
+    id: 'ID_2',
     type: WIDGET_TYPES.VISUALISATION,
     data: {
       url: ''
@@ -29,6 +32,7 @@ export default [
     },
   },
   {
+    id: 'ID_3',
     type: WIDGET_TYPES.VISUALISATION,
     data: {
       url: ''
