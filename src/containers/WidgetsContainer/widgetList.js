@@ -13,7 +13,7 @@ export default [
   {
     id: 'ID_1',
     type: WIDGET_TYPES.VISUALISATION,
-    data: {
+    dataConfig: {
       url: ''
     },
     visualisation: {
@@ -23,7 +23,7 @@ export default [
   {
     id: 'ID_2',
     type: WIDGET_TYPES.VISUALISATION,
-    data: {
+    dataConfig: {
       url: ''
     },
     visualisation: {
@@ -33,7 +33,7 @@ export default [
   {
     id: 'ID_3',
     type: WIDGET_TYPES.VISUALISATION,
-    data: {
+    dataConfig: {
       url: ''
     },
     visualisation: {
