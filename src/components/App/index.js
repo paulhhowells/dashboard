@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import WidgetsContainer from '../../containers/WidgetsContainer';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
         Header
       </header>
       <main className="page__main">
-        Main
+        <WidgetsContainer />
       </main>
       <footer className="page__footer">
         Footer
