@@ -1,11 +1,17 @@
 import React from 'react';
+import widgetList from './widgetList';
+import Widget, { Widgets } from '../../components/Widget';
 
-function WidgetsContainer () {
+export default function WidgetsContainer () {
+  console.log('widgetList', widgetList);
+
   return (
-    <div>
-      WidgetsContainer
-    </div>
+    <Widgets>
+      {widgetList.map(widgetPicker)}
+    </Widgets>
   );
 }
 
-export default WidgetsContainer;
+function widgetPicker (widget) {
+  return <Widget key={ widget.id } {...widget} />
+}
