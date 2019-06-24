@@ -1,5 +1,4 @@
-import { WIDGET_TYPES, VISUALISATION_TYPES } from '../../components/Widget/constants';
-
+import { WIDGET_TYPES, VISUALISATION_TYPES } from '../../constants';
 
 // TODO:
 // for multiple VISUALISATION_TYPES, UI_TYPES, etc. a reference to ID / KEY and config?
