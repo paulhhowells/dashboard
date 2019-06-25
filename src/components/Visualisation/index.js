@@ -15,7 +15,7 @@ const Visualisation = ({visualisation, dataConfig, ...props}) => {
     throw new Error('Visualisation type not found: ' + visualisation.type);
   }
 
-  const [ data, setData ] = useState(false); // state
+  const [ response, setResponse ] = useState(false); // state
 
   // TODO: in the future use Suspense once it supports data fetching.
   useEffect(
@@ -26,9 +26,9 @@ const Visualisation = ({visualisation, dataConfig, ...props}) => {
         .then(res => res.json()) // TODO: maybe check and throw an error here?
         .then(
           (result) => {
-            setData({
+            setResponse({
               isLoaded: true,
-              data: result
+              result: result
             });
 
             console.log('result', result);
@@ -37,7 +37,7 @@ const Visualisation = ({visualisation, dataConfig, ...props}) => {
           // instead of a catch() block so that we don't swallow
           // exceptions from actual bugs in components.
           (error) => {
-            setData({
+            setResponse({
               isLoaded: true,
               error
             });
@@ -50,7 +50,7 @@ const Visualisation = ({visualisation, dataConfig, ...props}) => {
   const VisualisationComponent = visualisationComponents[visualisation.type];
 
   return <VisualisationComponent
-    data={data}
+    response={response}
     visualisation={visualisation}
     {...props}
   />;

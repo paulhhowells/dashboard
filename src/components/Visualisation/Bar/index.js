@@ -1,14 +1,18 @@
 import React from 'react';
 
-export default function Bar ({data, ...props}) {
-  console.log('data', data);
+export default function Bar ({response, ...props}) {
 
-  return (
-    <div>
-      Bar
+  if (response.isLoaded) {
+    return (
       <div>
-        {data && data.data.data.map(datum => <span key={datum}> {datum} </span>)}
+        Bar {response.isLoaded && 'loaded'}
+        <div>
+          {response && response.result.data.map(datum => <span key={datum}> {datum} </span>)}
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
+  else {
+    return <div>LOADING</div>;
+  }
 }
