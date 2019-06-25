@@ -17,6 +17,7 @@ const Visualisation = ({visualisation, dataConfig, ...props}) => {
 
   const [ data, setData ] = useState(false); // state
 
+  // TODO: in the future use Suspense once it supports data fetching.
   useEffect(
     () => {
       console.log('dataConfig', dataConfig);
