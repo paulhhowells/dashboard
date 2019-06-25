@@ -14,7 +14,7 @@ export default [
     id: 'ID_1',
     type: WIDGET_TYPES.VISUALISATION,
     dataConfig: {
-      url: ''
+      url: '/mock/pie.json'
     },
     visualisation: {
       type: VISUALISATION_TYPES.PIE
@@ -24,7 +24,7 @@ export default [
     id: 'ID_2',
     type: WIDGET_TYPES.VISUALISATION,
     dataConfig: {
-      url: ''
+      url: '/mock/bar.json'
     },
     visualisation: {
       type: VISUALISATION_TYPES.BAR
@@ -34,7 +34,7 @@ export default [
     id: 'ID_3',
     type: WIDGET_TYPES.VISUALISATION,
     dataConfig: {
-      url: ''
+      url: '/mock/pulsar.json'
     },
     visualisation: {
       type: VISUALISATION_TYPES.PULSAR
