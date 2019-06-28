@@ -20,7 +20,6 @@ const Visualisation = ({visualisation, dataConfig, ...props}) => {
   // TODO: in the future use Suspense once it supports data fetching.
   useEffect(
     () => {
-      console.log('dataConfig', dataConfig);
 
       fetch(dataConfig.url)
         .then(res => res.json()) // TODO: maybe check and throw an error here?
@@ -49,11 +48,19 @@ const Visualisation = ({visualisation, dataConfig, ...props}) => {
 
   const VisualisationComponent = visualisationComponents[visualisation.type];
 
-  return <VisualisationComponent
-    response={response}
-    visualisation={visualisation}
-    {...props}
-  />;
+  if (!response.isLoaded) {
+    return <div>Loading, have a cup of tea!</div>
+  } else if (response.result) {
+    return <VisualisationComponent
+      response={response}
+      result={response.result}
+      visualisation={visualisation}
+      {...props}
+    />;
+  } else {
+    // TODO: test & handle errors
+    return <div>Error!</div>
+  }
 };
 
 Visualisation.propTypes = {
