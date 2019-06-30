@@ -2,6 +2,7 @@ import React from 'react';
 import { WIDGET_TYPES } from '../../constants';
 import UiWidget from './UiWidget/';
 import VisualisationWidget from './VisualisationWidget/';
+import './widget.css';
 
 const typeComponents = {
   UI: UiWidget,
