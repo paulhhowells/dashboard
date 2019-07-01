@@ -5,6 +5,15 @@ import { WIDGET_TYPES, VISUALISATION_TYPES } from '../../constants';
 // or store config in object?  create New objects - create definitions?
 // compile this from an object and array of IDs?
 
+// TODO:
+// add clock
+// add calendar
+// add TC 2290 digits
+// add radar
+// add pulsar
+// add streamgraph
+// add network graph
+
 export default [
   {
     id: 'ID_0',
