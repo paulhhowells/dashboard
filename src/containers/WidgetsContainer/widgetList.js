@@ -33,7 +33,7 @@ export default [
     id: 'ID_2',
     type: WIDGET_TYPES.VISUALISATION,
     dataConfig: {
-      url: '/mock/bar.json'
+      url: '/array'
     },
     visualisation: {
       type: VISUALISATION_TYPES.BAR

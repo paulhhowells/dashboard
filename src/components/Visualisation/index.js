@@ -16,7 +16,7 @@ const Visualisation = ({visualisation, dataConfig, ...props}) => {
     throw new Error('Visualisation type not found: ' + visualisation.type);
   }
 
-  const { json, loading } = useFetchJson(dataConfig.url);
+  const { json, loading } = useFetchJson(dataConfig.url, 9000);
 
   const VisualisationComponent = visualisationComponents[visualisation.type];
 
