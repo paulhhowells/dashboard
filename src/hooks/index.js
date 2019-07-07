@@ -22,8 +22,10 @@ export function useFetchJson (url, pollingFrequency) {
     function fetchJson () {
       fetch(url)
         .then(response => {
-          if (response.status !== 200) {
-            throw new Error('HTTP Status Code: ' + response.status);
+          if (!response.ok || response.status !== 200) {
+            throw new Error(
+              `HTTP Status Code: ${response.status} ${response.statusText}`
+            );
           }
 
           return response.json();
