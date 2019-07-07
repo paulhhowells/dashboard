@@ -10,3 +10,6 @@ export const VISUALISATION_TYPES = {
   PIE: 'PIE',
   PULSAR: 'PULSAR',
 }
+
+// http://tauday.com/tau-manifesto
+export const TAU = 2 * Math.PI;
