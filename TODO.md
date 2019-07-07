@@ -7,7 +7,6 @@
 * needle - fuel gauge
 * get up to speed with D3 v5
 * try react-spring for animations instead of d3.transition
-
 * API
   * single digit for needle { value, min, max }
   * random with a bias within a range
@@ -16,3 +15,7 @@
   * 2d array
   * stack for streamgraph
   * socket.io push
+* environment variables
+* yarn workspaces
+* yarn add numeral
+* yarn add moment
