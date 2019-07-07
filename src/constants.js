@@ -5,6 +5,8 @@ export const WIDGET_TYPES = {
 
 export const VISUALISATION_TYPES = {
   BAR: 'BAR',
+  GAUGE: 'GAUGE',
+  NUMERALS: 'NUMERALS',
   PIE: 'PIE',
   PULSAR: 'PULSAR',
 }

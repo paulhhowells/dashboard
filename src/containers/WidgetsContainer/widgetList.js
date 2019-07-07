@@ -49,4 +49,24 @@ export default [
       type: VISUALISATION_TYPES.PULSAR
     },
   },
+  {
+    id: 'ID_4',
+    type: WIDGET_TYPES.VISUALISATION,
+    dataConfig: {
+      url: '/gauge'
+    },
+    visualisation: {
+      type: VISUALISATION_TYPES.GAUGE
+    },
+  },
+  {
+    id: 'ID_5',
+    type: WIDGET_TYPES.VISUALISATION,
+    dataConfig: {
+      url: '/numerals'
+    },
+    visualisation: {
+      type: VISUALISATION_TYPES.NUMERALS
+    },
+  },
 ];

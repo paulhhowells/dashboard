@@ -2,12 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useFetchJson } from '../../hooks';
 import Bar from './Bar/';
+import Gauge from './Gauge/';
+import Numerals from './Numerals/';
 import Pie from './Pie/';
 import Pulsar from './Pulsar/';
 
 const visualisationComponents = {
   BAR: Bar,
+  GAUGE: Gauge,
   PIE: Pie,
+  NUMERALS: Numerals,
   PULSAR: Pulsar,
 }
 
