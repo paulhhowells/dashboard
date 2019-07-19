@@ -23,7 +23,7 @@ export default [
     id: 'ID_1',
     type: WIDGET_TYPES.VISUALISATION,
     dataConfig: {
-      url: '/mock/pie.json'
+      url: '/array'
     },
     visualisation: {
       type: VISUALISATION_TYPES.PIE
