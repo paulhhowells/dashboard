@@ -3,8 +3,8 @@ import * as d3 from 'd3';
 import SVG from '../../SVG';
 
 export default function Pie ({result, ...props}) {
-  const { dataset } = result;
-  const nodeRef = useRef(null);
+	const { dataset } = result;
+	const nodeRef = useRef(null);
 
   useLayoutEffect(() => {
     d3.select(nodeRef.current)

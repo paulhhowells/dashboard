@@ -15,58 +15,58 @@ import { WIDGET_TYPES, VISUALISATION_TYPES } from '../../constants';
 // add network graph
 
 export default [
-  {
-    id: 'ID_0',
-    type: WIDGET_TYPES.UI
-  },
-  {
-    id: 'ID_1',
-    type: WIDGET_TYPES.VISUALISATION,
-    dataConfig: {
-      url: '/array'
-    },
-    visualisation: {
-      type: VISUALISATION_TYPES.PIE
-    },
-  },
-  {
-    id: 'ID_2',
-    type: WIDGET_TYPES.VISUALISATION,
-    dataConfig: {
-      url: '/array'
-    },
-    visualisation: {
-      type: VISUALISATION_TYPES.BAR
-    },
-  },
-  {
-    id: 'ID_3',
-    type: WIDGET_TYPES.VISUALISATION,
-    dataConfig: {
-      url: '/mock/pulsar.json'
-    },
-    visualisation: {
-      type: VISUALISATION_TYPES.PULSAR
-    },
-  },
-  {
-    id: 'ID_4',
-    type: WIDGET_TYPES.VISUALISATION,
-    dataConfig: {
-      url: '/gauge'
-    },
-    visualisation: {
-      type: VISUALISATION_TYPES.GAUGE
-    },
-  },
-  {
-    id: 'ID_5',
-    type: WIDGET_TYPES.VISUALISATION,
-    dataConfig: {
-      url: '/numerals'
-    },
-    visualisation: {
-      type: VISUALISATION_TYPES.NUMERALS
-    },
-  },
+	{
+		id: 'ID_0',
+		type: WIDGET_TYPES.UI
+	},
+	{
+		id: 'ID_1',
+		type: WIDGET_TYPES.VISUALISATION,
+		dataConfig: {
+			url: '/array'
+		},
+		visualisation: {
+			type: VISUALISATION_TYPES.PIE
+		},
+	},
+	{
+		id: 'ID_2',
+		type: WIDGET_TYPES.VISUALISATION,
+		dataConfig: {
+			url: '/array'
+		},
+		visualisation: {
+			type: VISUALISATION_TYPES.BAR
+		},
+	},
+	{
+		id: 'ID_3',
+		type: WIDGET_TYPES.VISUALISATION,
+		dataConfig: {
+			url: '/mock/pulsar.json'
+		},
+		visualisation: {
+			type: VISUALISATION_TYPES.PULSAR
+		},
+	},
+	{
+		id: 'ID_4',
+		type: WIDGET_TYPES.VISUALISATION,
+		dataConfig: {
+			url: '/gauge'
+		},
+		visualisation: {
+			type: VISUALISATION_TYPES.GAUGE
+		},
+	},
+	{
+		id: 'ID_5',
+		type: WIDGET_TYPES.VISUALISATION,
+		dataConfig: {
+			url: '/numerals'
+		},
+		visualisation: {
+			type: VISUALISATION_TYPES.NUMERALS
+		},
+	},
 ];

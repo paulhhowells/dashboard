@@ -1,22 +1,22 @@
 .widgets {
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 0.5em;
-  grid-auto-rows: minmax(4em, auto);
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 0.5em;
+	grid-auto-rows: minmax(4em, auto);
 }
 
 @media only screen and (min-width: 24em)  {
-  /* breakpoint min-width derived from grid-template-columns minmax 20em + .main padding 2em + a bit extra */
-  .widgets {
-    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
-    grid-gap: 1em;
-  }
+	/* breakpoint min-width derived from grid-template-columns minmax 20em + .main padding 2em + a bit extra */
+	.widgets {
+		grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+		grid-gap: 1em;
+	}
 }
 
 .widget {
-  box-sizing: border-box;
-  padding: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+	box-sizing: border-box;
+	padding: 1rem;
+	border: 1px solid rgba(255, 255, 255, 0.03);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }

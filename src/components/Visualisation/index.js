@@ -8,38 +8,38 @@ import Pie from './Pie/';
 import Pulsar from './Pulsar/';
 
 const visualisationComponents = {
-  BAR: Bar,
-  GAUGE: Gauge,
-  PIE: Pie,
-  NUMERALS: Numerals,
-  PULSAR: Pulsar,
+	BAR: Bar,
+	GAUGE: Gauge,
+	PIE: Pie,
+	NUMERALS: Numerals,
+	PULSAR: Pulsar,
 }
 
 const Visualisation = ({visualisation, dataConfig, ...props}) => {
-  if (!(visualisation.type && visualisationComponents[visualisation.type])) {
-    throw new Error('Visualisation type not found: ' + visualisation.type);
-  }
+	if (!(visualisation.type && visualisationComponents[visualisation.type])) {
+		throw new Error('Visualisation type not found: ' + visualisation.type);
+	}
 
-  const { json, loading } = useFetchJson(dataConfig.url, 9000);
+	const { json, loading } = useFetchJson(dataConfig.url, 9000);
 
-  const VisualisationComponent = visualisationComponents[visualisation.type];
+	const VisualisationComponent = visualisationComponents[visualisation.type];
 
-  if (loading) {
-    return <div>Loading, have a cup of tea!</div>
-  } else if (json) {
-    return <VisualisationComponent
-      result={json}
-      visualisation={visualisation}
-      {...props}
-    />;
-  } else {
-    // TODO: test & handle errors
-    return <div>Error!</div>
-  }
+	if (loading) {
+		return <div>Loading, have a cup of tea!</div>
+	} else if (json) {
+		return <VisualisationComponent
+			result={json}
+			visualisation={visualisation}
+			{...props}
+		/>;
+	} else {
+		// TODO: test & handle errors
+		return <div>Error!</div>
+	}
 };
 
 Visualisation.propTypes = {
-  visualisation: PropTypes.object.isRequired
+	visualisation: PropTypes.object.isRequired
 };
 
 export default Visualisation;

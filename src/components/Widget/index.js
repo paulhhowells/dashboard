@@ -5,25 +5,25 @@ import VisualisationWidget from './VisualisationWidget/';
 import './widget.css';
 
 const typeComponents = {
-  UI: UiWidget,
-  VISUALISATION: VisualisationWidget,
+	UI: UiWidget,
+	VISUALISATION: VisualisationWidget,
 };
 
 export function Widgets (props) {
-  return <div className="widgets">{props.children}</div>
+	return <div className="widgets">{props.children}</div>
 }
 
 export default function Widget (widget) {
-  if (!(widget.type && WIDGET_TYPES[widget.type] && typeComponents[widget.type])) {
-    throw new Error('Widget type not found: ' + widget.type);
-  }
+	if (!(widget.type && WIDGET_TYPES[widget.type] && typeComponents[widget.type])) {
+		throw new Error('Widget type not found: ' + widget.type);
+	}
 
-  const Component = typeComponents[widget.type];
+	const Component = typeComponents[widget.type];
 
-  let className = 'widget';
-  if (widget.type) {
-    className += ' widget__' + widget.type.toLowerCase();
-  }
+	let className = 'widget';
+	if (widget.type) {
+		className += ' widget__' + widget.type.toLowerCase();
+	}
 
-  return <Component className={className} {...widget} />;
+	return <Component className={className} {...widget} />;
 }
