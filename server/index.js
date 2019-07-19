@@ -10,6 +10,23 @@ app.get('/array', (req, res) => res.json(arrayPicker()));
 
 app.get('/gauge', (req, res) => res.json({ value: 9, min: 0, max: 10 }));
 
+app.get(
+  '/numerals',
+  (req, res) => res.json({
+    // TODO: add something about number of digits or decimal places?
+    dataset: [
+      {
+        name: 'Ratio',
+        value: 999,
+      },
+      {
+        name: 'Threshold',
+        value: 64,
+      },
+    ]
+  })
+);
+
 let arrayChoiceIndex = 0;
 const arrayChoices = [
   {
