@@ -20,5 +20,10 @@ export default function Widget (widget) {
 
   const Component = typeComponents[widget.type];
 
-  return <Component className="widget" {...widget} />;
+  let className = 'widget';
+  if (widget.type) {
+    className += ' widget__' + widget.type.toLowerCase();
+  }
+
+  return <Component className={className} {...widget} />;
 }
