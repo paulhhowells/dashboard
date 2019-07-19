@@ -14,7 +14,7 @@ let arrayChoiceIndex = 0;
 const arrayChoices = [
   {
     "name": "Array",
-    "data": [
+    "dataset": [
       { "label": "A", "value": 1},
       { "label": "B", "value": 2},
       { "label": "C", "value": 3},
@@ -26,7 +26,7 @@ const arrayChoices = [
   },
   {
     "name": "Array",
-    "data": [
+    "dataset": [
       { "label": "A", "value": 3},
       { "label": "B", "value": 3},
       { "label": "C", "value": 4},
@@ -36,7 +36,7 @@ const arrayChoices = [
   },
   {
     "name": "Array",
-    "data": [
+    "dataset": [
       { "label": "B", "value": 4},
       { "label": "C", "value": 3},
       { "label": "D", "value": 7},

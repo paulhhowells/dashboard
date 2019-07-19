@@ -1,6 +1,6 @@
 {
   "name": "Pulsar JSON",
-  "data": [
+  "dataset": [
     "a", "b", "c"
   ]
 }
